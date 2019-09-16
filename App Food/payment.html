@@ -1,0 +1,47 @@
+<ons-page id="paymentpage">
+    <ons-toolbar>
+        <ons-button modifier="quiet" class="left" id="backtocart">BACK</ons-button>
+        <div class="center">PAYMENT</div>
+    </ons-toolbar>
+    <div style="background-color: salmon">
+        <h3>Choose the payment you are paying</h3>
+    </div>
+    <ons-list>
+        <ons-list-item tappable>
+            <label class="left">
+                <ons-radio name="color" input-id="radio-1" checked></ons-radio>
+            </label>
+            <label for="radio-1" class="center">
+                CASH
+            </label>
+        </ons-list-item>
+        <ons-list-item tappable>
+            <label class="left">
+                <ons-radio name="color" input-id="radio-2"></ons-radio>
+            </label>
+            <label for="radio-2" class="center">
+                MOBILE BANKING
+            </label>
+        </ons-list-item>
+    </ons-list>
+    <div style="background-color: salmon">
+        <h3>Confirm your address</h3>
+    </div>
+    <p>
+        <ons-input modifier="underbar" placeholder="80/1 Kathu,Phuket Thailand 83120" required></ons-input>
+    </p>
+    <ons-list-item tappable>
+        <label class="left">
+            <ons-checkbox input-id="check-1"></ons-checkbox>
+        </label>
+        <label for="check-1" class="center">
+            YES!
+        </label>
+    </ons-list-item>
+    <div style="text-align: center; margin-top: 15%">
+        <ons-button style="background-color: salmon" id="ok">OKAY</ons-button>
+    </div>
+    <div style="text-align: center; margin-top: 5%">
+        <ons-icon size="30px" spin icon="md-spinner"></ons-icon>
+    </div>
+</ons-page>
